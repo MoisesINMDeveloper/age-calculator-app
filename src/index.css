@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.listyle{
+    width: 5rem;
+}
+.inputstyle{
+    border-color:hsl(0, 1%, 44%);
+    border-width: 1px;
+    width: 5.5rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 25px;
+}
+.inputstylehover{
+    border-color:hsl(259, 100%, 65%);
+}
+.error-input{
+ border-color:hsl(0, 100%, 67%); ;    
+}
+.error{
+    position: absolute;
+    width: 5rem;
+    margin-top: 0.5rem;
+    color:hsl(0, 100%, 67%);
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: italic;
+    font-size:small;
+}
+.SpanPurple{
+    color:hsl(259, 100%, 65%);
+}
+.ResultStyle{
+    position: relative;
+    font-size: 3.25rem;
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-style: italic;
+}
