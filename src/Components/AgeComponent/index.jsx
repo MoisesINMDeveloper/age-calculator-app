@@ -89,8 +89,8 @@ export default function AgeComponent() {
     };
 
     return (
-        <section className="bg-White w-[90vw] md:h-[66vh] py-10 md:max-w-[42vw] flex-row items-center justify-center mx-[1rem] rounded-t-3xl rounded-l-3xl rounded-br-[6rem] px-4 md:px-[1.5rem] my-[4rem] pt-[1rem]">
-            <ul className="flex md:w-[33vw] mx-2 mt-5 space-x-5 md:space-x-12 pb-[6rem] md:pb-[2rem] border-b-[2px] border-Lightgrey">
+        <section className="bg-White w-[90vw] md:w-[42vw] min-w-[21rem] md:min-w-[36rem] py-10 md:max-w-[42vw] flex-row items-center justify-center mx-[1rem] rounded-t-3xl rounded-l-3xl rounded-br-[6rem] px-4 md:px-[1.5rem] my-[4rem] pt-[1rem]">
+            <ul className="flex md:w-[33vw] md:min-w-[30rem] mx-2 mt-5 space-x-5 md:space-x-12 pb-[6rem] md:pb-[2rem] border-b-[2px] border-Lightgrey">
                 <li className="listyle">
                     <label className="text-Smokeygrey text-sm tracking-widest" htmlFor="day">DAY</label>
                     <input id="day" className={inputStyle('day')} type="number" placeholder="DD" value={day} onChange={(e) => setDay(e.target.value)} />
@@ -107,8 +107,8 @@ export default function AgeComponent() {
                     {errors.year && <p className="error md:w-[8rem] md:text-[10px]">{errors.year}</p>}
                 </li>
             </ul>
-            <div className='md:flex md:justify-end'>
-                <button className="bg-Purple hover:bg-Offblack md:ml-[auto] w-[4rem] h-[4rem] rounded-full flex justify-center items-center absolute mt-[-2rem] ml-[7.5rem]" onClick={validateInput}>
+            <div className='flex justify-center md:justify-end'>
+                <button className="bg-Purple hover:bg-Offblack w-[4rem] h-[4rem] rounded-full flex justify-center items-center mt-[-2rem]" onClick={validateInput}>
                     <img className="w-[2rem] h-[2rem]" src={ArrowPurple} alt="Arrow Down" />
                 </button>
             </div>
