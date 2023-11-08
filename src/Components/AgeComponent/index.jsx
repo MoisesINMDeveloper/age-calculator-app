@@ -89,7 +89,7 @@ export default function AgeComponent() {
     };
 
     return (
-        <section className="bg-White w-[90vw] md:h-[57vh] md:max-w-[42vw] h-[70vh] flex-row items-center justify-center mx-[1.5rem] rounded-t-3xl rounded-l-3xl rounded-br-[6rem] px-4 md:px-[1.5rem] my-[4rem] pt-[1rem]">
+        <section className="bg-White w-[90vw] md:h-[66vh] md:max-w-[42vw] h-[70vh] flex-row items-center justify-center mx-[1.5rem] rounded-t-3xl rounded-l-3xl rounded-br-[6rem] px-4 md:px-[1.5rem] my-[4rem] pt-[1rem]">
             <ul className="flex md:w-[33vw] mx-2 mt-5 space-x-5 md:space-x-12 pb-[6rem] md:pb-[2rem] border-b-[2px] border-Lightgrey">
                 <li className="listyle">
                     <label className="text-Smokeygrey text-sm tracking-widest" htmlFor="day">DAY</label>
@@ -113,13 +113,13 @@ export default function AgeComponent() {
                 </button>
             </div>
             <div className='flex-col mx-2 mt-[4rem] md:mt-[1rem] items-start justify-center'>
-                <p className='ResultStyle leading-none'>
+                <p className='ResultStyle md:text-[5.25rem] leading-none'>
                     <span className='SpanPurple'>{result.years !== null ? result.years : '--'}</span> years
                 </p>
-                <p className='ResultStyle leading-none'>
+                <p className='ResultStyle leading-none md:text-[5.25rem]'>
                     <span className='SpanPurple'>{result.months !== null ? result.months : '--'}</span> months
                 </p>
-                <p className='ResultStyle leading-none'>
+                <p className='ResultStyle leading-none md:text-[5.25rem]'>
                     <span className='SpanPurple'>{result.days !== null ? result.days : '--'}</span> days
                 </p>
                 {errors.date && <p className="error">{errors.date}</p>}
