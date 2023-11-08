@@ -89,7 +89,7 @@ export default function AgeComponent() {
     };
 
     return (
-        <section className="bg-White w-[90vw] md:h-[53vh] md:w-[42vw] h-[70vh] flex-row items-center justify-center mx-[1.5rem] rounded-t-3xl rounded-l-3xl rounded-br-[6rem] px-4 md:px-[1.5rem] my-[4rem] pt-[1rem]">
+        <section className="bg-White w-[90vw] md:h-[57vh] md:max-w-[42vw] h-[70vh] flex-row items-center justify-center mx-[1.5rem] rounded-t-3xl rounded-l-3xl rounded-br-[6rem] px-4 md:px-[1.5rem] my-[4rem] pt-[1rem]">
             <ul className="flex md:w-[33vw] mx-2 mt-5 space-x-5 md:space-x-12 pb-[6rem] md:pb-[2rem] border-b-[2px] border-Lightgrey">
                 <li className="listyle">
                     <label className="text-Smokeygrey text-sm tracking-widest" htmlFor="day">DAY</label>
@@ -107,9 +107,11 @@ export default function AgeComponent() {
                     {errors.year && <p className="error md:w-[8rem] md:text-[10px]">{errors.year}</p>}
                 </li>
             </ul>
-            <button className="bg-Purple hover:bg-Offblack md:ml-[26rem] w-[4rem] h-[4rem] rounded-full flex justify-center items-center absolute mt-[-2rem] ml-[7.5rem]" onClick={validateInput}>
-                <img className="w-[2rem] h-[2rem]" src={ArrowPurple} alt="Arrow Down" />
-            </button>
+            <div className='md:flex md:justify-end'>
+                <button className="bg-Purple hover:bg-Offblack md:ml-[auto] w-[4rem] h-[4rem] rounded-full flex justify-center items-center absolute mt-[-2rem] ml-[7.5rem]" onClick={validateInput}>
+                    <img className="w-[2rem] h-[2rem]" src={ArrowPurple} alt="Arrow Down" />
+                </button>
+            </div>
             <div className='flex-col mx-2 mt-[4rem] md:mt-[1rem] items-start justify-center'>
                 <p className='ResultStyle leading-none'>
                     <span className='SpanPurple'>{result.years !== null ? result.years : '--'}</span> years
